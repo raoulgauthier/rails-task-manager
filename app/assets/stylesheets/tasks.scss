@@ -1,0 +1,38 @@
+// Place all the styles related to the Tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+  font-family: 'Arial Black', Gadget, sans-serif;
+  color :rgb(255, 0, 120);
+  font-size: 18px;
+
+}
+
+h3 {
+  font-family :'Arial Black', Gadget, sans-serif;
+  font-size: lighter;
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(230, 230, 230);
+}
+
+a:hover {
+color: rgb(210, 210, 210);
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Arial Black', Gadget, sans-serif;
+  font-size: 10px;
+  color: rgb(230, 230, 230);
+}
+
+p {
+  font-family :'Arial Black', Gadget, sans-serif;
+  font-size: lighter;
+  font-size: 10px;
+}

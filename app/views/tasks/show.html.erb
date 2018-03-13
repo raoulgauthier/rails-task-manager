@@ -1,0 +1,22 @@
+<h1><%= @task.title %></h1>
+<table>
+  <tr>
+    <td><h3> Details: </h3></td>
+    <td><p> <%= @task.details%> </p></td>
+  </tr>
+  <tr>
+    <td><h3> Status: </h3></td>
+    <td><% if @task.completed? %>
+     <p> Done </p>
+     <% else %>
+     <p> To be done </p>
+     <% end %></td>
+  </tr>
+</table>
+
+<br>
+
+<%= link_to "Back to the list", tasks_path %>
+
+<br>
+  <%= link_to "Edit", edit_path(@task) %>

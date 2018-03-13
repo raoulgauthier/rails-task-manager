@@ -1,0 +1,16 @@
+<h1> Here are your tasks </h1>
+<ul>
+  <% @tasks.each do |toto| %>
+  <li>
+    <%= link_to task_path(toto) do %>
+    <% if toto.completed? %>
+       <h2><i class="far fa-check-circle"></i>  <%= toto.title %> <%= link_to "X", task_path(toto), method: :DELETE, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %></h2>
+       <% else %>
+       <h2><i class="far fa-circle"></i>  <%= toto.title %> <%= link_to "X", task_path(toto), method: :DELETE, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %></h2>
+       <% end %>
+    <% end %>
+  </li>
+  <% end %>
+</ul>
+
+<%= link_to "new task", tasks_new_path %>

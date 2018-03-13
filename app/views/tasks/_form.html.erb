@@ -1,0 +1,10 @@
+<%= form_for @task, class: "form-inline" do |r| %>
+  <%= r.label :title, 'enter your task' %>
+  <%= r.text_field :title %>
+  <%= r.label :details, 'enter details' %>
+  <%= r.text_field :details %>
+  <%= r.label :completed, 'Did you complete it ?' %>
+  <%= r.check_box :completed %>
+  <%= r.submit "submit", class: "btn btn-primary" %>
+
+<% end %>
